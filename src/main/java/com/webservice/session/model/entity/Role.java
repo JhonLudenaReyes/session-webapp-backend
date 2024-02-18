@@ -18,7 +18,7 @@ public class Role {
 	
 	private String role;
 	
-	@Column(columnDefinition = "varchar(1) default 'A'")
+	@Column(columnDefinition = "varchar(1) not null default 'A'")
 	private String state = "A";
 
 	public Integer getRoleId() {
