@@ -17,4 +17,8 @@ public class UserService {
 	public Optional<User> getUserLogin(String User, String password){
 		return userDaoRepository.findByUserAndPasswordAndState(User, password, "A");
 	}
+	
+	public User saveUser(User user) {
+		return userDaoRepository.save(user);
+	}
 }
